@@ -17,6 +17,11 @@ const routes: RouteRecordRaw[] = [
     component: () => import('./views/WatchEffectDome.vue')
   },
   {
+    path: '/reactive',
+    name: 'reactive',
+    component: () => import('./views/Reactive.vue')
+  },
+  {
     path: '/i-reactive',
     name: 'i-reactive',
     component: () => import('./views/IReactive.vue')
