@@ -142,7 +142,7 @@ function createReactiveObject(
   if (existingProxy) {
     return existingProxy
   }
-
+  // TODO：缺少对于 TargetType.COLLECTION 类型的代理处理
   const proxy = new Proxy(target, baseHandlers)
   proxyMap.set(target, proxy)
   return proxy
